@@ -1,43 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>UNIX - TECNOLOGIAS</title>
     <style>
-      .tech {
-        text-align: center; /* Center text within the div */
-      }
-      .img {
-        height: 600px; /* Set a fixed height for the image */
-        width: auto; /* Maintain aspect ratio */
-        max-width: 100%; /* Ensure the image does not exceed the container's width */
-      }
+        header {
+            background-color: #b8bbb6;
+            padding: 15px;
+            display: flex;
+            justify-content: center; /* Center the header content */
+            align-items: center;
+            flex-wrap: wrap; /* Allows items to wrap in smaller screens */
+        }
+        header a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #f9fae8;
+            border: none;
+            border-radius: 5px;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+        header a:hover {
+            background-color: #f0e4fc;
+        }
+        .tech {
+            text-align: center; /* Center text within the div */
+        }
+        .img {
+            height: 600px; /* Set a fixed height for the image */
+            width: auto; /* Maintain aspect ratio */
+            max-width: 100%; /* Ensure the image does not exceed the container's width */
+        }
+        h1 {
+            font-size: 2rem; /* Larger heading size */
+        }
+        h2 {
+            font-size: 1rem; /* Base text size */
+            margin-top: 20px; /* Add space above the text */
+        }
+        /* Responsive font size adjustments */
+        @media (min-width: 768px) {
+            h2 {
+                font-size: 1.2rem; /* Increase size on larger screens */
+            }
+        }
+        @media (min-width: 1024px) {
+            h2 {
+                font-size: 1.5rem; /* Further increase size on larger screens */
+            }
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
+    <header>
+        <a href="index.html">HOME</a>
+    </header>
     <div class="tech">
-      <h1 id="tec_title">Teste</h1>
-      <img
-        class="img"
-        src="imagem.ingles/pm.jpg"
-        alt="Description of the image"
-      />
-      <h2>
-        Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit, sed do eiusmod tempor incididunt ut labore et
-        dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore
-        eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia
-        deserunt mollit anim id est laborum.
-      </h2>
+        <h1 id="tec_title">Teste</h1>
+        <img
+            class="img"
+            src="imagem.ingles/pm.jpg"
+            alt="Description of the image"
+        />
+        <h2>
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore
+            eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.
+        </h2>
     </div>
-  </body>
+</body>
 </html>
