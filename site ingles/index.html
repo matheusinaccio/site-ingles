@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIX</title>
+    <style>
+        header {
+    background-color: #b8bbb6;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between; /* Distribui os itens com espaço entre eles */
+    align-items: center;
+    flex-wrap: wrap; /* Permite que os itens "quebrem" para a linha de baixo em telas menores */
+}
+
+header a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #f9fae8;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+header a:hover {
+    background-color: #f0e4fc;
+}
+
+/* Media query para telas menores (responsividade) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Muda a direção dos itens para coluna em telas menores */
+        text-align: center;
+    }
+
+    header a {
+        margin: 10px 0; /* Aumenta o espaçamento vertical entre os links em telas menores */
+        width: 100%; /* Faz os botões ocuparem a largura total em telas pequenas */
+    }
+}
+        
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;  /* Centraliza verticalmente */
+            align-items: center;      /* Centraliza horizontalmente */
+            min-height: 75vh;        /* Define altura mínima para ocupar a tela inteira */
+            text-align: center;       /* Centraliza o texto */
+        }
+
+        p {
+            margin-bottom: 20px;      /* Espaço abaixo do parágrafo */
+            line-height: 1.6;         /* Ajusta o espaçamento entre linhas */
+        }
+
+        img {
+            max-width: 100%;          /* Faz a imagem ser responsiva */
+            height: auto;
+        }
+
+        header a:hover {
+            background-color: #6e6c70;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="pagina1.html">NOVAS TECNOLOGIAS</a>
+        <a href="pagina2.html"><Em>EQUIPE</Em></a>
+        <a href="pagina3.html">INDIVIDUAL</a>
+    </header>
+
+    <!-- Conteúdo da página -->
+    <main>
+        <h1>UNIX</h1>
+       <H2>Venha conhecer um pouco das novas tecnologias</H2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse purus turpis, finibus vitae efficitur sit amet, ullamcorper eget ex..<br>
+             Vivamus sit amet lacus a lacus porttitor scelerisque. Sed dui dolor, volutpat sit amet nulla nec, elementum dignissim turpis. Donec eu turpis<br>
+              eget diam sollicitudin tincidunt. In nec elementum odio. Pellentesque nisl tortor, eleifend nec dictum vel, consectetur et velit.<br>
+               Donec ac magna at sem lacinia tristique. Phasellus aliquam nibh nec diam fringilla dapibus. Phasellus enim massa, viverra nec eros nec, ultrices mattis eros.<br>
+                Mauris gravida tellus a maximus lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam dictum hendrerit tellus. Fusce nisi odio, tempus<br>
+                at ipsum non, fermentum sagittis nibh. Nullam eu lectus in lorem pulvinar finibus.<br>
+            </p>
+
+            <img src="pm.jpg" alt="Descrição da imagem" width="1000 ">
+    </main>
+
+</body>
+</html>
