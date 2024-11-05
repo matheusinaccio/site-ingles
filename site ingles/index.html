@@ -1,112 +1,166 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>UNIX</title>
     <style>
+      header {
+        background-color: #7db3b1;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between; /* Distribui os itens com espaço entre eles */
+        align-items: center;
+        flex-wrap: wrap; /* Permite que os itens "quebrem" para a linha de baixo em telas menores */
+      }
+
+      header a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        padding: 10px 20px;
+        background-color: #7db3b1;
+        border: none;
+        border-radius: 5px;
+        margin: 0 10px;
+        font-size: 16px;
+      }
+
+      header a:hover {
+        background-color: #f0e4fc;
+      }
+
+      /* Media query para telas menores (responsividade) */
+      @media (max-width: 768px) {
         header {
-            background-color: #b8bbb6;
-            padding: 15px;
-            display: flex;
-            justify-content: space-around; /* Distributes items evenly */
-            align-items: center;
-            flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+          flex-direction: column; /* Muda a direção dos itens para coluna em telas menores */
+          text-align: center;
         }
 
         header a {
-            color: rgb(0, 0, 0);
-            text-decoration: none;
-            padding: 10px 20px;
-            background-color: #f9fae8;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            flex-grow: 1; /* Allows links to grow equally */
-            text-align: center; /* Center the text within each link */
-            margin: 0 5px; /* Small margin between links */
+          margin: 10px 0; /* Aumenta o espaçamento vertical entre os links em telas menores */
+          width: 100%; /* Faz os botões ocuparem a largura total em telas pequenas */
         }
+      }
 
-        header a:hover {
-            background-color: #f0e4fc;
-        }
+      main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centraliza verticalmente */
+        align-items: center; /* Centraliza horizontalmente */
+        min-height: 75vh; /* Define altura mínima para ocupar a tela inteira */
+        text-align: center; /* Centraliza o texto */
+      }
 
-        /* Media query for smaller screens (responsiveness) */
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column; /* Change direction to column on smaller screens */
-                text-align: center;
-            }
+      p {
+        margin-bottom: 20px;
+        line-height: 1.6;
+      }
 
-            header a {
-                margin: 10px 0; /* Increased vertical spacing between links */
-                width: 100%; /* Makes buttons occupy full width on small screens */
-            }
-        }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
 
-        main {
-            display: flex;
-            flex-direction: column;
-            justify-content: center; /* Center vertically */
-            align-items: center; /* Center horizontally */
-            min-height: 75vh; /* Minimum height to occupy the full screen */
-            text-align: center; /* Center the text */
-        }
-
-        p {
-            margin-bottom: 20px; /* Space below the paragraph */
-            line-height: 1.6; /* Adjusts line spacing */
-        }
-
-        img {
-            max-width: 100%; /* Makes the image responsive */
-            height: auto;
-        }
-
-        header a:hover {
-            background-color: #6e6c70;
-        }
+      header a:hover {
+        background-color: #c7f8f2;
+      }
+      .banner {
+        width: 2000px;
+        height: 450px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <a href="nv_tech.html">NOVAS TECNOLOGIAS</a>
-        <a href="eqp.html"><em>EQUIPE</em></a>
-        <a href="pagina3.html">INDIVIDUAL</a>
+      <a href="">QUEM SOMOS NÓS?</a>
+      <a href="equipe.html">SUSTENTABILIDADE AMBIENTAL</a>
+      <a href="indiv.html">BIBLIOGRAFIA</a>
     </header>
 
-    <!-- Page Content -->
+    <!-- Conteúdo da página -->
     <main>
-        <h1>UNIX</h1>
-        <h2>Venha conhecer um pouco das novas tecnologias</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Suspendisse purus turpis, finibus vitae
-            efficitur sit amet, ullamcorper eget ex..<br />
-            Vivamus sit amet lacus a lacus porttitor
-            scelerisque. Sed dui dolor, volutpat sit amet nulla
-            nec, elementum dignissim turpis. Donec eu turpis<br />
-            eget diam sollicitudin tincidunt. In nec elementum
-            odio. Pellentesque nisl tortor, eleifend nec dictum
-            vel, consectetur et velit.<br />
-            Donec ac magna at sem lacinia tristique. Phasellus
-            aliquam nibh nec diam fringilla dapibus. Phasellus
-            enim massa, viverra nec eros nec, ultrices mattis
-            eros.<br />
-            Mauris gravida tellus a maximus lobortis. Interdum
-            et malesuada fames ac ante ipsum primis in faucibus.
-            Aliquam dictum hendrerit tellus. Fusce nisi odio,
-            tempus<br />
-            at ipsum non, fermentum sagittis nibh. Nullam eu
-            lectus in lorem pulvinar finibus.<br />
-        </p>
+      <img src="imagem.ingles/banner.jpg" class="banner" />
+      <h1>UNIX</h1>
+      <h2>Venha conhecer um pouco das novas tecnologias</h2>
+      <p>
+        Na Unix, nosso objetivo é transformar o cotidiano de
+        hospitais, empresas, indústrias e lojas através da
+        implementação de soluções inovadoras em Inteligência
+        Artificial (IA) e Internet das Coisas (IoT).
+        Acreditamos que a tecnologia tem o poder de otimizar
+        processos, economizar tempo e melhorar a eficiência
+        em diversos setores. Nosso compromisso é fornecer
+        ferramentas que automatizam tarefas rotineiras e
+        complexas, permitindo que os funcionários e médicos
+        possam focar no que realmente importa: oferecer um
+        atendimento de qualidade e tomar decisões
+        estratégicas. Com nossas soluções, esperamos
+        facilitar o trabalho diário, reduzindo a carga de
+        tarefas manuais e minimizando erros humanos. Para os
+        hospitais, nossas tecnologias visam melhorar a
+        gestão hospitalar, desde o monitoramento de
+        pacientes até a administração de recursos. Isso
+        resulta em um ambiente mais organizado e eficiente,
+        onde os profissionais de saúde podem dedicar mais
+        tempo ao cuidado dos pacientes. Nas empresas e
+        indústrias, nossas soluções de IA e IoT ajudam a
+        automatizar processos produtivos, monitorar
+        equipamentos em tempo real e prever manutenções
+        necessárias. Isso não só aumenta a produtividade,
+        mas também garante um ambiente de trabalho mais
+        seguro e eficiente. Na UNIX, estamos comprometidos
+        em levar inovação e eficiência a todos os nossos
+        parceiros, ajudando-os a alcançar seus objetivos com
+        mais rapidez e precisão. Junte-se a nós nessa
+        jornada rumo a um futuro mais inteligente e
+        automatizado.
+      </p>
 
-        <img
-            src="pm.jpg"
-            alt="Descrição da imagem"
-            width="1000"
-        />
+      <img
+        src="imagem.ingles/logo.png"
+        alt="Descrição da imagem"
+        width="700"
+      />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <h1>SUSTENTABILIDADE AMBIENTAL</h2>
+      <br />
+      <br />
+      <h2>MONITOR DE GLICOSE</h3>
+      <img src="imagem.ingles/image.png" />
+      <p>
+        Monitor de Glicose Freestyle Libre - Fabricado pela
+        Abbott, este dispositivo permite a monitorização
+        contínua da glicose no sangue para diabéticos,
+        eliminando a necessidade de <br />picadas constantes
+        no dedo. Ele coleta dados e os envia para o
+        smartphone do paciente, ajudando a ajustar a dosagem
+        de insulina conforme necessário
+      </p>
+      <h2>Inaladores Conectados</h3>
+      <img src="imagem.ingles/image2.png" />
+      <p>
+        Inaladores Conectados - Utilizados no tratamento de
+        asma e DPOC, inaladores conectados monitoram o uso
+        do medicamento e <br />ajudam a identificar fatores
+        ambientais que desencadeiam crises. Eles são
+        fabricados por empresas como Propeller Health, que
+        proporciona controle mais preciso e prevenção de
+        emergências
+      </p>
+      <br />
+      <br />
+      <br />
+      <br />
+      <h1>BIBLIOGRAFIA</h1>
+      <p style="font-size: 25px;">google.com / facebook.com / instagram.com / youtube.com</p>
     </main>
-</body>
+  </body>
 </html>
